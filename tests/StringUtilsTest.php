@@ -9,6 +9,11 @@ class StringUtilsTest extends TestCase
         $util = new StringUtils();
         $this->assertEquals('hello-world', $util->slugify('Hello World!'));
     }
+    public function testContains()
+    {
+        $util = new StringUtils();
+        $this->assertTrue($util->contains('Hello World', 'lo Wo'));
+    }
 }
 
 ?>

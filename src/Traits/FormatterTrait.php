@@ -12,6 +12,11 @@ trait FormatterTrait
     {
         return strtolower(preg_replace('/[^A-Za-z0-9-]+/', '-', $input));
     }
+
+    public function contains(string $haystack, string $needle): bool
+    {
+        return str_contains($haystack, $needle);
+    }
 }
 
 

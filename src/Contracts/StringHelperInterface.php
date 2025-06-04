@@ -8,6 +8,8 @@ interface StringHelperInterface
     public function slugify(string $input): string;
 
     public function sanitize(string $input): string;
+    
+    public function contains(string $haystack, string $needle): bool;
 }
 
 ?>
